@@ -13,11 +13,6 @@ public class MainController {
     @GetMapping("/")
     public String index(Model model) {
 
-        try {
-            String res = ParsJsop.parsing();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         return "index";
     }
